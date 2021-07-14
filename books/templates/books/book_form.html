@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}New-book{% endblock title %}
+
+{% block body %}
+<main role="main" class="container">
+ <div class="row py-5">
+  <div class="container-2 py-5">
+   <h1 class="text-center">New Book</h1>
+   <form method="POST" action="">
+   {% csrf_token %} 
+   {{form|crispy}}
+   <br>
+   <div class="form-group">
+          <button class="btn btn-primary" type="submit">Add</button>
+   </div>
+ </form>
+</div>
+</div>
+</main>
+{% endblock body %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Detail{% endblock title %}
+{% block body %}
+<main role="main" class="container">
+ <div class="row py-5">
+  <div class="container-2 py-5">
+    <table class="table">
+   <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Book</th>
+      <th scope="col">Author</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Language</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{object.book}}</td>
+      <td>{{object.author}}</td>
+      <td>{{object.genre}}</td>
+      <td>{{object.language}}</td>
+    </tr>
+   </tbody>
+   </table>
+<div>
+</div>
+</main>
+{% endblock body %}
